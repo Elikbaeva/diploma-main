@@ -13,7 +13,6 @@ export default function CategoryList() {
       <NavLink to={`/categories/${category.slug}`}>
         {category.name}
       </NavLink>
-
       <DeleteCategory category={category} />
     </li>
   ));
