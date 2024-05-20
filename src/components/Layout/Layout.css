@@ -1,0 +1,48 @@
+.Layout {
+  display: grid;
+  grid-template-areas: "header header"
+                       "aside aside"
+                       "main main"
+                       "footer footer";
+  grid-template-columns: 2fr 7fr;
+  
+  max-width: 1340px;
+  margin: 0 auto;
+} 
+.Layout header {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-area: header;
+}
+.Layout aside {
+  display: flex;
+  grid-area: aside;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.Layout main {
+  grid-area: main;
+  margin-bottom: 50px;
+}
+.Layout footer {
+  grid-area: footer;
+
+}
+
+.logo{
+  display: flex;
+}
+
+@media (max-width: 550px) {
+  .Layout header > .Nav {
+    display: none;
+  }
+}
+
+.Layout .user{
+  display: flex;
+}

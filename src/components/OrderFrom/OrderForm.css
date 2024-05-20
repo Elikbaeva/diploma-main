@@ -1,0 +1,34 @@
+.OrderForm input {
+  margin: 10px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.OrderForm button {
+  color: white;
+  background: rgb(47, 45, 45);
+  border: none;
+}
+
+.OrderForm svg:hover {
+  cursor: pointer;
+  color: dimgray;
+}
+
+.OrderForm {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 620px) {
+  .OrderForm {
+    flex-direction: column;
+  }
+  
+  .OrderForm label {
+    margin-bottom: 10px;
+  }
+}
