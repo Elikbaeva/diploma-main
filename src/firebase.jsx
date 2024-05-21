@@ -14,12 +14,12 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAaVfTreDB8xD0sFgSX9Bs33z4-1rpkgp0",
-  authDomain: "diploma-80372.firebaseapp.com",
-  projectId: "diploma-80372",
-  storageBucket: "diploma-80372.appspot.com",
-  messagingSenderId: "385982947477",
-  appId: "1:385982947477:web:5c74c1e0a88402705abb9c",
+  apiKey: "AIzaSyB-tX4k1OEs0fq2IKdCod5VW8aB_D0L15w",
+  authDomain: "home-goods-a1b2f.firebaseapp.com",
+  projectId: "home-goods-a1b2f",
+  storageBucket: "home-goods-a1b2f.appspot.com",
+  messagingSenderId: "19451149403",
+  appId: "1:19451149403:web:5c28dc869883ebdb31537e"
 };
 
 // Initialize Firebase

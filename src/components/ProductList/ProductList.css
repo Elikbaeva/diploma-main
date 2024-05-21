@@ -5,6 +5,8 @@
 }
 
 .ProductList .Product {
+  border-radius: 30px;
+  border: 1px solid #fff;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -13,12 +15,12 @@
 }
 
 .ProductList .Product img {
+  margin-top: 40px;
   border-radius: 1rem;
   border: 2px solid white;
   width: 100%;
   height: auto;
-  max-width: 300px;
-  max-height: 300px;
+  max-height: 350px;
 }
 .Product img:hover {
   box-shadow: 0 0 10px 5px #888;

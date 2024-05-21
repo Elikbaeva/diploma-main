@@ -1,5 +1,6 @@
 .AddToCart button {
   display: flex;
+  margin-bottom: 40px;
   align-items: center;
   cursor: pointer;
   font-weight: 500;

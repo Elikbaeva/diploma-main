@@ -6,14 +6,16 @@ export default function Home() {
     <div className="Home">
       <div className="Home-container">
         <div className="home-text">
-          <h3>Welcome to Nike</h3>
+          <h3>Welcome to the world of home goods</h3>
           <p>
-            Less talk, more action. Let's start buying branded Nike clothing at
-            very good prices.
+            Create your dream home: At HomeHarmony you will find
+            everything you need to create a cozy and stylish environment
+            in your home. From kitchen utensils to stylish interior accessories,
+            our range will please even the most discerning customers.
           </p>
           <button className="btn-home">
             <Link className="link-home" to={"/categories/tracksuits"}>LET'S GO</Link>
-           
+
           </button>
         </div>
         <div className="video">

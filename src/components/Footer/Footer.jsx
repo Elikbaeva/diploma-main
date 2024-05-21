@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Footer = () => {
   return (
     <footer>
+      <hr></hr>
       <div className="container">
         <div className="row">
           <div className="col-md-3">
@@ -29,16 +30,16 @@ const Footer = () => {
             <h3>Our Services</h3>
             <ul>
               <li>
-                <Link to={"/categories/tracksuits"}>Tracksuits</Link>
+                <Link to={"/categories/tracksuits"}>Rest</Link>
               </li>
               <li>
-                <Link to={"/categories/hats"}>Different Hats</Link>
+                <Link to={"/categories/hats"}>Appliances</Link>
               </li>
               <li>
-                <Link to={"/categories/backpack"}>Backpack</Link>
+                <Link to={"/categories/backpack"}>For home</Link>
               </li>
               <li>
-                <Link to={"/categories/sneakers"}>Sneakers</Link>
+                <Link to={"/categories/sneakers"}>For fitchen</Link>
               </li>
             </ul>
           </div>
@@ -53,17 +54,17 @@ const Footer = () => {
             className="Tel"
             target="_blank"
             rel="noreferrer"
-            href="tel:  +996 707 763 896"
+            href="tel:  +996 504 495 095"
           >
-            +996 707 763 896
+            +996 504 495 095
           </a>
               <br /> Email:    <a
             className="Tel"
             target="_blank"
             rel="noreferrer"
-            href="mailto:emilovbaku530@gmail.com"
+            href="elikbaevasedep77@gmail.com"
           >
-            emilovbaku530@gmail.com
+            elikbaevasedep77@gmail.com
           </a>
             </p>
           </div>
@@ -89,6 +90,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr></hr>
+
     </footer>
   );
 };
