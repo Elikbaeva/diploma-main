@@ -6,7 +6,7 @@
   body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: rgb(47, 45, 45);
+    background: #2F3931;
     transition: all 3ms ease;
     color: white;
   }
@@ -211,14 +211,12 @@
   .Home .Home-container {
     padding: 20px;
     color: #333;
-    background-color: white;
   }
 
   .Home .btn-home {
     padding: 20px 40px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: white;
     font-size: 20px;
     font-weight: 600;
   }
@@ -234,11 +232,13 @@
   }
 
   .home-text h3  {
+    color: #fff;
      font-size: 40px;
   }
 
   .home-text p {
     font-size: 25px;
+    color: #fff;
   }
 
   .Home .video iframe {
