@@ -35,7 +35,7 @@
 .ProductList .Product span {
   padding: 10px;
   text-align: center;
-  color: rgb(8, 236, 8);
+  color: blueviolet;
 }
 @media screen and (max-width: 1068px) {
   .ProductList {

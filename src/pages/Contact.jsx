@@ -26,9 +26,9 @@ const Contact = () => {
               className="Tel"
               target="_blank"
               rel="noreferrer"
-              href="tel:  +996 707 763 896"
+              href="tel:  +996 554 495 095"
             >
-              +996 707 763 896
+              +996 554 495 095
             </a>
           </span>
         </div>
@@ -49,9 +49,9 @@ const Contact = () => {
               className="Tel"
               target="_blank"
               rel="noreferrer"
-              href="mailto:emilovbaku530@gmail.com"
+              href="elikbaevasedep77gamil.com"
             >
-              emilovbaku530@gmail.com
+              elikbaevasedep77gamil.com
             </a>
           </span>
         </div>
