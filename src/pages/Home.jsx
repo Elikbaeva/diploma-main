@@ -14,7 +14,6 @@ export default function Home() {
             our range will please even the most discerning customers.
           </p>
         </div>
-        <VideoPlayer />
       </div>
     </div>
   );
