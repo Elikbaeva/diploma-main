@@ -13,7 +13,6 @@
     transition: all 3ms ease;
     color: white;
   }
-
   .Product img {
     justify-content: center;
     border: 2px solid white;
@@ -238,7 +237,7 @@
   }
 
   .home-text p {
-    font-size: 22px;
+    font-size: 25px;
     color: #fff;
   }
 
