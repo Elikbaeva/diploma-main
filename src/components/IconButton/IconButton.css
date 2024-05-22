@@ -1,5 +1,5 @@
 .icon-button {
-    --size: 40px;
+    --size: 60px;
     min-width: var(--size);
     height: var(--size);
     cursor: pointer;
