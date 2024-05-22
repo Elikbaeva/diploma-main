@@ -6,7 +6,7 @@
   body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #2F3931;
+    background: #252926;
     transition: all 3ms ease;
     color: white;
   }
@@ -38,7 +38,6 @@
   }
 
   .delivery-container {
-    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -47,12 +46,12 @@
   
   .delivery-heading {
     font-size: 24px;
-    color: #333;
+    color: #fff;
     margin-bottom: 10px;
   }
   
   .delivery-text {
-    color: #666;
+    color: #fff;
     line-height: 1.5;
     margin-bottom: 20px;
   }
@@ -64,7 +63,7 @@
   
   .delivery-option {
     flex: 1;
-    color: #333;
+    color: #fff;
   }
   
   .delivery-icon {
@@ -75,12 +74,12 @@
   
   .delivery-option-heading {
     font-size: 18px;
-    color: #333;
+    color: #fff;
     margin-bottom: 8px;
   }
   
   .delivery-option-text {
-    color: #666;
+    color: #fff;
     line-height: 1.3;
   }
 
@@ -113,19 +112,18 @@
     }
   }
   .contact-container {
-    background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .contact-heading {
-    color: #333;
+    color: #fff;
     text-align: center;
   }
   
   .contact-info {
-    color: #666;
+    color: #fff;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -145,28 +143,28 @@
   
 
   .contact-item svg {
-    color: black;
+    color: #fff;
     font-size: 18px;
     margin-right: 10px;
   }
   
   .contact-text {
-    color: #333;
+    color: #fff;
   }
   
   .contact-subheading {
     text-align: center;
-    color: #333;
+    color: #fff;
     margin-bottom: 10px;
   }
   
   .contact-hours {
-    color: #666;
+    color: #fff;
     text-align: center;
   }
 
   .contact-item a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
   }
   .contact-item a:hover{
@@ -184,14 +182,14 @@
     }
   }
   .about-us-container {
-    background-color: white;
+    /* background-color: white; */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .about-us-heading {
-    color: #333;
+    color: #fff;
     font-size: 24px;
     margin-bottom: 10px;
   }
@@ -200,7 +198,7 @@
   .about-us-mission,
   .about-us-values,
   .about-us-visit {
-    color: #666;
+    color: #fff;
     margin-bottom: 10px;
   }
   
