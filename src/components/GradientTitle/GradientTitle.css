@@ -1,6 +1,5 @@
 .gradient-title {
-  background: var(--gradient);
+  color: #8f72f7;
   border-radius: 30px;
-  color: #fff;
   margin: 0;
 }
