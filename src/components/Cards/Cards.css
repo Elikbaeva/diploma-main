@@ -3,17 +3,18 @@
   border: 1.5px solid rgb(219, 223, 208);
   border-radius: 12px;
   transition: 0.3s;
-  background: var(--gradient);
+  background: #fff;
   width: 306px;
   height: 308px;
+  transition: .3s;
+}
+.use_card:hover{
+    box-shadow: 0 0 10px 5px violet;
 }
 .carts{
     flex-wrap: wrap;
     display: flex;
     gap: 25px;
-}
-.carts:hover{
-    
 }
 .brands{
     margin-top: 60px;
