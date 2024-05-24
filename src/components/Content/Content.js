@@ -1,5 +1,4 @@
 import { GradientTitle } from '../GradientTitle/GradientTitle'
-import { IconButton } from '../IconButton/IconButton'
 import { Slider } from '../Slider/Slider'
 import photo_1 from '../../assets/images/mebel.jpeg'
 import photo_2 from '../../assets/images/uyout.jpeg'

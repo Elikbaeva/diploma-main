@@ -9,6 +9,7 @@
   .slider {
     display: flex;
     gap: 15px;
+    margin-bottom: 90px;
   }
   
   .slide {
@@ -52,8 +53,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 65%;
+    text-transfor: uppercase;
   }
   .slide__title {
     color: #fff;

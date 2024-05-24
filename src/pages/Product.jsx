@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { AppContext } from "../App";
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
-
 export default function Product() {
   const { products } = useContext(AppContext);
   const { params } = useMatch("/products/:slug");
@@ -12,6 +11,9 @@ export default function Product() {
   if (!product) {
     return <NotFound />;
   }
+
+  
+
 
   return (
     <div className="Product">

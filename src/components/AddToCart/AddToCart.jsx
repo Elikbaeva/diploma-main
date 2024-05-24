@@ -8,8 +8,8 @@ export default function AddToCart({ product }) {
   function onAddToCartClick() {
     const qty = cart[product.id] ? cart[product.id] + 1 : 1;
     setCart({
-      ...cart, // положить текущее содержимое корзинки
-      [product.id]: qty, // добавить текущий товар
+      ...cart,
+      [product.id]: qty,
     });
   }
 

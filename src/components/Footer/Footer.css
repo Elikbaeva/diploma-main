@@ -37,7 +37,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: dimgray;
+  color: #AB5BFB;
   transition: 0.3s;
 }
 footer p {
@@ -62,7 +62,7 @@ footer .social-media i {
   font-size: 30px;
 }
 footer .social-media i:hover{
-  color: dimgray;
+  color: #AB5BFB;
   transition: 0.3s;
 }
 

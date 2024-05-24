@@ -22,6 +22,7 @@ export default function Layout(props) {
       <header>
         <Logo />
         <Nav />
+        
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <div className="user">

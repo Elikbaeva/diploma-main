@@ -13,7 +13,7 @@
   transition: 0.3s;
 }
 .AddToCart button:hover {
-  color: rgb(47, 45, 45);
+  background: var(--gradient);
   background-color: white;
   transition: 0.3s;
 }
