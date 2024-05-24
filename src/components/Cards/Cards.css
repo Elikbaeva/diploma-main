@@ -4,10 +4,25 @@
   border-radius: 12px;
   transition: 0.3s;
   background: var(--gradient);
-  width: 316px;
+  width: 306px;
   height: 308px;
 }
 .carts{
+    flex-wrap: wrap;
     display: flex;
-    gap: 40px;
+    gap: 25px;
+}
+.carts:hover{
+    
+}
+.brands{
+    margin-top: 60px;
+    width: 240px;
+    height: 160px;
+}
+.Cards_title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
