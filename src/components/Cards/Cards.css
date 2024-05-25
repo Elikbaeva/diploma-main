@@ -4,8 +4,7 @@
   border-radius: 12px;
   transition: 0.3s;
   background: #fff;
-  width: 306px;
-  height: 308px;
+  height: 250px;
   transition: .3s;
 }
 .use_card:hover{
@@ -14,10 +13,11 @@
 .carts{
     flex-wrap: wrap;
     display: flex;
-    gap: 25px;
+    gap: 45px;
+    justify-content: center;
 }
 .brands{
-    margin-top: 60px;
+    margin-top: 30px;
     width: 240px;
     height: 160px;
 }

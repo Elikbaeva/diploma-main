@@ -18,19 +18,18 @@ import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 
-
-
 // Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
-
-  // контекст для корзины
-  cart: {}, // содержимое корзинки
-  setCart: () => {}, // изменить содержимое корзики
-
+  cart: {}, // содержимое корзины
+  setCart: () => {}, // изменить содержимое корзины
   user: null,
+  searchTerm: '',
+  setSearchTerm: () => {},
+  searchResults: [],
+  setSearchResults: () => {}
 });
 
 function App() {
@@ -40,8 +39,9 @@ function App() {
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
-
   const [user, setUser] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -61,12 +61,19 @@ function App() {
     });
   }, []);
 
+  const handleSearch = () => {
+    const results = products.filter(product =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+  };
+
   return (
     <div className="App">
       <AppContext.Provider
-        value={{ categories, products, cart, setCart, user, orders }}
+        value={{ categories, products, cart, setCart, user, orders, searchTerm, setSearchTerm, searchResults, setSearchResults }}
       >
-        <Layout>
+        <Layout handleSearch={handleSearch}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
