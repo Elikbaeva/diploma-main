@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
 import "./CartList.css";
+import AddToCart from "../AddToCart/AddToCart";
 
 export default function CartList() {
   //получить список товаров и корзинку
