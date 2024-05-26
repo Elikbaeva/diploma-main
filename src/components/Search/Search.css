@@ -25,8 +25,8 @@
   }
   .Search .SearchResults {
     position: absolute;
-    right: 400px;
-    top: 0;
+    right: 00px;
+    top: 130px;
   }
   .Search .searcher {
     color: #222;
@@ -41,3 +41,5 @@
       display: none
     }
   }
+
+  

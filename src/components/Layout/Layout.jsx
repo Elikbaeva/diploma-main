@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AppContext } from "../../App";
 import Auth from "../Auth/Auth";
 import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
@@ -8,16 +9,18 @@ import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import NavToggle from "../NavToggle/NavToggle";
 import "./Layout.css";
-import Search from '../Search/Search';
+import Search from "../Search/Search";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const { searchTerm } = useContext(AppContext);
 
   function toggleDrawer() {
     setDrawerOpen(!drawerOpen);
   }
+
   return (
-    <div className="Layout">
+    <div className={`Layout ${searchTerm ? "search-active" : ""}`}>
       <header>
         <Logo />
         <Nav />

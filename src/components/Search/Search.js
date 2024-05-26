@@ -1,12 +1,9 @@
-import { useEffect, useContext, useState, useRef } from "react";
+import { useEffect, useContext, useRef } from "react";
 import { AppContext } from "../../App";
-import Product from '../../pages/Product';
 import "./Search.css";
 
 export default function Search() {
-  const { products } = useContext(AppContext);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  const { products, searchTerm, setSearchTerm, searchResults, setSearchResults } = useContext(AppContext);
   const searchRef = useRef(null);
 
   const handleSearch = (event) => {
@@ -30,11 +27,6 @@ export default function Search() {
     }
   };
 
-  const handleLinkClick = () => {
-    setSearchTerm("");
-    setSearchResults([]);
-  };
-
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     return () => {
@@ -53,18 +45,20 @@ export default function Search() {
       <span>
         <i className="fa-solid fa-magnifying-glass searcher"></i>
       </span>
-      {searchTerm && searchResults.length === 0 && (
-        <div className="NoResults">No results found</div>
+      {searchTerm && (
+        <div className="SearchResults">
+          {searchResults.length === 0 ? (
+            <div className="NoResults">No results found</div>
+          ) : (
+            searchResults.map((product) => (
+              <div key={product.id} className="SearchResultItem">
+                <img src={product.picture} alt={product.name} />
+                <span>{product.name}</span>
+              </div>
+            ))
+          )}
+        </div>
       )}
-      <div className="SearchResults">
-        {searchResults.map((product) => (
-          <Product
-            key={product.id}
-            product={product}
-            onLinkClick={handleLinkClick}
-          />
-        ))}
-      </div>
     </div>
   );
 }
