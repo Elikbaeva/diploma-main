@@ -8,8 +8,7 @@ import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import NavToggle from "../NavToggle/NavToggle";
 import "./Layout.css";
-
-
+import Search from '../Search/Search';
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -22,6 +21,7 @@ export default function Layout(props) {
       <header>
         <Logo />
         <Nav />
+        <Search />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <div className="user">

@@ -4,16 +4,14 @@ import { useMatch } from "react-router";
 import NotFound from "./NotFound";
 export default function Product() {
   const { products } = useContext(AppContext);
-  const { params } = useMatch("/products/:slug");
+  const match = useMatch("/products/:slug");
+  const { params } = match || { params: {} };
 
-  const product = products.find((product) => product.slug === params.slug);
+  const product = products.find((product) => product.slug === params?.slug);
 
   if (!product) {
     return <NotFound />;
   }
-
-  
-
 
   return (
     <div className="Product">

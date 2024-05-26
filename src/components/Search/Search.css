@@ -1,0 +1,44 @@
+.Search {
+    background-color: white;
+    margin:0px;
+    border-radius: 15px;
+    position: relative;
+    max-height: 30px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .Search input {
+    background: #3b3b3b;
+    border: 0;
+    border-radius: 15px;
+    color: #ffffff;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    padding: 0;
+  }
+  
+  .Search .NoResults {
+    position: absolute;
+    transform: translateY(-18px);
+    color: white;
+  }
+  .Search .SearchResults {
+    position: absolute;
+    right: 400px;
+    top: 0;
+  }
+  .Search .searcher {
+    color: #222;
+    margin: 8px;
+  }
+  .Search input::placeholder {
+    color: #cacaca;
+  }
+  
+  @media (max-width: 640px) {
+    .Search {
+      display: none
+    }
+  }
