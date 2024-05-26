@@ -1,6 +1,5 @@
 import { useEffect, useContext, useState, useRef } from "react";
 import { AppContext } from "../../App";
-import Product from '../../pages/Product';
 import "./Search.css";
 
 export default function Search() {
@@ -8,6 +7,10 @@ export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const searchRef = useRef(null);
+
+  useEffect(() => {
+    console.log('Products:', products); // Логирование данных продуктов
+  }, [products]);
 
   const handleSearch = (event) => {
     const value = event.target.value;
@@ -17,9 +20,10 @@ export default function Search() {
       setSearchResults([]);
     } else {
       const filteredProducts = products.filter((product) =>
-        product.name?.toLowerCase().includes(value.toLowerCase())
+        product.name.toLowerCase().includes(value.toLowerCase())
       );
       setSearchResults(filteredProducts.slice(0, 5));
+      console.log('Search Results:', filteredProducts); // Логирование результатов поиска
     }
   };
 
@@ -28,11 +32,6 @@ export default function Search() {
       setSearchTerm("");
       setSearchResults([]);
     }
-  };
-
-  const handleLinkClick = () => {
-    setSearchTerm("");
-    setSearchResults([]);
   };
 
   useEffect(() => {
@@ -58,11 +57,16 @@ export default function Search() {
       )}
       <div className="SearchResults">
         {searchResults.map((product) => (
-          <Product
-            key={product.id}
-            product={product}
-            onLinkClick={handleLinkClick}
-          />
+          <div key={product.id} className="Product">
+            <h1>{product.name}</h1>
+            <img
+              src={product.picture}
+              alt={product.name}
+              className="Product__image"
+            />
+            <span className="Product__price">${product.price}</span>
+            <span className="Product__description">{product.description}</span>
+          </div>
         ))}
       </div>
     </div>
