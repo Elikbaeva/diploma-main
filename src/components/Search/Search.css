@@ -6,7 +6,6 @@
     max-height: 30px;
     white-space: nowrap;
     box-sizing: border-box;
-    margin-top: 10px;
   }
   .Search input {
     background: #3b3b3b;
@@ -14,6 +13,7 @@
     border-radius: 15px;
     color: #ffffff;
     height: 30px;
+
     text-align: center;
     outline: none;
     padding: 0;

@@ -1,16 +1,14 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
-import { useParams } from "react-router-dom";
+import { useMatch } from "react-router";
 import NotFound from "./NotFound";
-
 export default function Product() {
   const { products } = useContext(AppContext);
-  const { slug } = useParams();
+  const match = useMatch("/products/:slug");
+  const { params } = match || { params: {} };
 
-  const product = products.find((product) => product.slug === slug);
-
-  console.log('Product:', product); // Логирование данных продукта
-
+  const product = products.find((product) => product.slug === params?.slug);
+ 
   if (!product) {
     return <NotFound />;
   }
