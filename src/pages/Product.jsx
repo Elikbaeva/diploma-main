@@ -1,15 +1,16 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { useMatch } from "react-router";
-import AddToCart from "../components/AddToCart";
 import NotFound from "./NotFound";
-export default function Product({onLinkClick}) {
+import AddToCart from "../components/AddToCart/AddToCart"; // Импортируем компонент AddToCart
+
+export default function Product({ onLinkClick }) {
   const { products } = useContext(AppContext);
   const match = useMatch("/products/:slug");
   const { params } = match || { params: {} };
 
   const product = products.find((product) => product.slug === params?.slug);
- 
+
   if (!product) {
     return <NotFound />;
   }
@@ -20,7 +21,7 @@ export default function Product({onLinkClick}) {
       <img src={product.picture} alt={product.name} className="Product__image" />
       <span className="Product__price">${product.price}</span>
       <span className="Product__description">{product.description}</span>
-      <AddToCart product={products} />
+      <AddToCart product={product} /> {/* Включаем компонент AddToCart */}
     </div>
   );
 }

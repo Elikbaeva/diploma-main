@@ -19,6 +19,10 @@
     border-radius: 10px;
     transition: 0.3s;
   }
+  .Product__description{
+    margin-bottom: 30px;
+    max-width: 550px;
+  }
 
   .Product {
     
