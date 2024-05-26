@@ -36,7 +36,6 @@
     object-fit: cover;
     object-position: center -1px;
   }
-  
   .slide__info {
     position: absolute;
     left: 20px;

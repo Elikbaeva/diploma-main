@@ -19,11 +19,14 @@
   border-radius: 1rem;
   border: 2px solid white;
   width: 100%;
+  opacity: 1;
+  transition: 0.3s;
+  margin-bottom: 30px;
   height: auto;
   max-height: 350px;
 }
 .Product img:hover {
-  transition: 0.3s;
+  scale: 1.1
 }
 
 .ProductList .Product a {
