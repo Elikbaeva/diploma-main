@@ -23,3 +23,24 @@
   .icon-button.right.disable {
     pointer-events: none;
   }
+
+  @media screen and (max-width: 980px) {
+    .icon-button.left,
+  .icon-button.left.disable {
+    background: url('../../assets/icons/Left.svg') center / 50% 50% no-repeat;
+  }
+  .icon-button.left:hover {
+    background: url('../../assets/icons/Left\ \(1\).svg') center / 50% 50% no-repeat;
+  }
+  .icon-button.right,
+  .icon-button.right.disable {
+    background: url('../../assets/icons/Right.svg') center / 50% 50% no-repeat;
+  }
+  .icon-button.right:hover {
+    background: url('../../assets/icons/Right\ \(1\).svg') center / 50% 50% no-repeat;
+  }
+  .icon-button.left.disable,
+  .icon-button.right.disable {
+    pointer-events: none;
+  }
+  }
