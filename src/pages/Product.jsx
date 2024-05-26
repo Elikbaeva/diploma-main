@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../App";
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
-export default function Product({ onLinkClick}) {
+export default function Product({onLinkClick}) {
   const { products } = useContext(AppContext);
   const match = useMatch("/products/:slug");
   const { params } = match || { params: {} };
