@@ -1,6 +1,6 @@
 import { GradientTitle } from '../GradientTitle/GradientTitle'
 import { Slider } from '../Slider/Slider'
-import photo_1 from '../../assets/images/mebel.jpeg'
+import photo_1 from '../../assets/images/flowers.jpeg'
 import photo_2 from '../../assets/images/uyout.jpeg'
 import photo_3 from '../../assets/images/vaza.jpeg'
 import photo_4 from '../../assets/images/kott.jpeg'
