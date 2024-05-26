@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { useMatch } from "react-router";
+import AddToCart from "../components/AddToCart";
 import NotFound from "./NotFound";
 export default function Product({onLinkClick}) {
   const { products } = useContext(AppContext);
