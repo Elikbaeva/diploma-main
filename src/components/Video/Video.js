@@ -6,7 +6,7 @@ export default function Video() {
     <div className="video">
       <video autoPlay muted loop controls>
         <source src={video} type="video/mp4" />
-        Ваш браузер не поддерживает элемент <code>video</code>.
+        
       </video>
     </div>
   );
