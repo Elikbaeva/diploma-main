@@ -416,3 +416,10 @@
       display: none;
     }
   }
+  .text{
+    color: #AB5BFB;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 35px;
+  }

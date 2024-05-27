@@ -87,7 +87,7 @@ const AboutUs = () => {
           </div>
         </details>
       </div>
-
+      <h2 className="text">Your comfort is our concern.</h2>
       <Video />
 
     </div>
