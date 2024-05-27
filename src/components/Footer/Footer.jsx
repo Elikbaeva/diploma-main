@@ -45,11 +45,19 @@ const Footer = () => {
           </div>
           <div className="col-md-3">
             <h3>Contact Us</h3>
+            Address:
+            <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="tel: "
+          >
+             <br />
+            1 Esenina Karakol, Kyrgyzstan
+          </a>
             <p>
-              1 Esenina
-              <br /> Karakol, Kyrgyzstan
-            </p>
-            <p>
+              Tell:
+              <br /> 
             <a
             className="Tel"
             target="_blank"
