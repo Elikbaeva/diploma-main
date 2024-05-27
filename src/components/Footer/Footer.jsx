@@ -47,33 +47,33 @@ const Footer = () => {
             <h3>Contact Us</h3>
             Address:
             <a
-            className="Tel"
-            target="_blank"
-            rel="noreferrer"
-            href="tel: "
-          >
-             <br />
-            1 Esenina Karakol, Kyrgyzstan
-          </a>
+              className="Tel"
+              target="_blank"
+              rel="noreferrer"
+              href="tel: "
+            >
+              <br />
+              1 Esenina Karakol, Kyrgyzstan
+            </a>
             <p>
               Tell:
-              <br /> 
-            <a
-            className="Tel"
-            target="_blank"
-            rel="noreferrer"
-            href="tel:  +996 504 495 095"
-          >
-            +996 504 495 095
-          </a>
+              <br />
+              <a
+                className="Tel"
+                target="_blank"
+                rel="noreferrer"
+                href="tel:  +996 504 495 095"
+              >
+                +996 504 495 095
+              </a>
               <br /> Email:    <a
-            className="Tel"
-            target="_blank"
-            rel="noreferrer"
-            href="elikbaevasedep77@gmail.com"
-          >
-            elikbaevasedep77@gmail.com
-          </a>
+                className="Tel"
+                target="_blank"
+                rel="noreferrer"
+                href="elikbaevasedep77@gmail.com"
+              >
+                elikbaevasedep77@gmail.com
+              </a>
             </p>
           </div>
           <div className="col-md-3">
@@ -99,7 +99,11 @@ const Footer = () => {
         </div>
       </div>
       <hr></hr>
-
+      <div className="txt">
+        <div className="footer_text">2021 Twigs Paper. All Rights Reserved.</div>
+        <div className="footer_text">Terms & Conditions</div>
+        <div className="footer_text">Built by The Papestielliz</div>
+      </div>
     </footer>
   );
 };
