@@ -6,7 +6,9 @@
   }
 
  .container{
-  
+
+  margin: 0 auto;
+  padding: 0 35px;
  }
   body{
     margin: 0;
