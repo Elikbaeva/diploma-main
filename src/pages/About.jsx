@@ -17,6 +17,8 @@ details.forEach(item => {
   });
 });
 
+
+
 const AboutUs = () => {
   return (
     <div className="about-us-container">
