@@ -10,7 +10,6 @@
   left: 0;
   bottom: 0;
   z-index: 100;
-
   transform: translateX(-300px);
   transition: transform 0.3s;
 }
@@ -45,7 +44,10 @@
   display: flex;
   justify-content: center;
 }
-
+.backdrop{
+  background: #2f2d2d;
+  opacity: 0.8;
+}
 
 .Logo {
   display: flex;

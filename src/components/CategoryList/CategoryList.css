@@ -39,6 +39,7 @@
   .CategoryList li a {
     padding: 1rem 4rem; 
     font-size: 14px;
+    white-space: nowrap;
   }
 }
 

@@ -5,8 +5,8 @@ const Delivery = () => {
     <div className="delivery-container">
       <h2 className="delivery-heading">Fast and Reliable Delivery</h2>
       <p className="delivery-text">
-        At Nike Shop, we offer quick and dependable delivery services to ensure
-        you receive your products in no time.
+      At Home Harmony we offer fast and reliable delivery services to ensure
+        you will receive your products as soon as possible.
       </p>
       <p className="delivery-text">
         Whether you're purchasing sneakers, apparel, or accessories, our

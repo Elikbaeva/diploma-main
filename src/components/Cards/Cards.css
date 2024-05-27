@@ -27,3 +27,14 @@
     font-weight: 600;
     margin-bottom: 50px;
 }
+@media screen and (max-width: 1200px){
+    .use_card{
+      height: 150px;
+      width: 150px;
+    }
+    .brands{
+        margin-top: 30px;
+        width: 140px;
+        height: 80px;
+    }
+  }
