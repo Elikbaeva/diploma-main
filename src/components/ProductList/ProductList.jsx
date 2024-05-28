@@ -6,6 +6,7 @@ import AddProduct from "../AddProduct/AddProduct";
 import DeleteProduct from "../DeleteProduct/deleteProduct";
 import AddToCart from "../AddToCart/AddToCart";
 
+
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
 
