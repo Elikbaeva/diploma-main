@@ -1,4 +1,4 @@
-// Import the functions you need from the SDKs you need
+
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, onSnapshot } from "firebase/firestore";
 import {
@@ -9,10 +9,9 @@ import {
   signOut,
 } from "firebase/auth";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyB-tX4k1OEs0fq2IKdCod5VW8aB_D0L15w",
   authDomain: "home-goods-a1b2f.firebaseapp.com",
@@ -40,14 +39,21 @@ export const logOut = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
 
 export const onCategoriesLoad = (callback) =>
-  onSnapshot(categoryCollection, (snapshot) =>
-    callback(
-      snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }))
-    )
+  onSnapshot(
+    categoryCollection,
+    (snapshot) => {
+      callback(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+      );
+    },
+    (error) => {
+      console.error("Failed to load categories:", error);
+    }
   );
+
 
 export const onProductsLoad = (callback) =>
   onSnapshot(productsCollection, (snapshot) =>
@@ -69,7 +75,6 @@ export const onOrdersLoad = (callback) =>
     )
   );
   
-  // отправка фотографии и получение ее url
 export const uploadProductPhoto = (file) => {
   const storageRef = ref(storage, `products/${file.name}`);
   return uploadBytes(storageRef, file)
