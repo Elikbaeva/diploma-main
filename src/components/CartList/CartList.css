@@ -69,3 +69,13 @@
 
 
 
+.CartList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.TotalPrice {
+  color: white;
+  font-size: 20px;
+}

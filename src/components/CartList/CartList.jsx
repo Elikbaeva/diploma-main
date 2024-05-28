@@ -1,28 +1,40 @@
-  import { useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
 import "./CartList.css";
 
-
 export default function CartList() {
-  //получить список товаров и корзинку
+  // Получение списка товаров и корзины из контекста
   const { products, cart, setCart } = useContext(AppContext);
 
+  // Функция для изменения количества товара в корзине
   function onQuantityChange(product, qty) {
     setCart({
       ...cart,
       [product.id]: qty,
     });
   }
+
+  // Функция для удаления товара из корзины
   function onItemRemove(product) {
     const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
   }
 
-  //
+  // Получение массива идентификаторов товаров в корзине
   const productIds = Object.keys(cart);
 
+  // Вычисление общей стоимости товаров в корзине
+  const totalPrice = productIds.reduce((acc, productId) => {
+    const product = products.find((p) => p.id === productId);
+    if (product) {
+      return acc + cart[productId] * product.price;
+    }
+    return acc;
+  }, 0);
+
+  // Генерация JSX для каждого товара в корзине
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
@@ -52,5 +64,12 @@ export default function CartList() {
       </div>
     ));
 
-  return <div className="CartList">{output}</div>;
+  return (
+    <div className="CartList">
+      {/* Вывод списка товаров в корзине */}
+      {output}
+      {/* Вывод общей стоимости */}
+      <div className="TotalPrice">Total Price: ${totalPrice.toFixed(2)}</div>
+    </div>
+  );
 }
