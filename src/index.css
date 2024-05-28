@@ -450,3 +450,19 @@ ul li strong {
     border-radius: 5px;
     margin-top: 20px;
 }
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #AB5BFB;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.scrollToTopButton:hover {
+  opacity: 0.8;
+}
