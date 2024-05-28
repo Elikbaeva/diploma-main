@@ -18,13 +18,12 @@ import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 
-// Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
-  cart: {}, // содержимое корзины
-  setCart: () => {}, // изменить содержимое корзины
+  cart: {}, 
+  setCart: () => {}, 
   user: null,
   searchTerm: '',
   setSearchTerm: () => {},
