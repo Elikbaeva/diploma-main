@@ -454,15 +454,23 @@ ul li strong {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #AB5BFB;
+  background-color: #7690EA;
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   cursor: pointer;
   transition: opacity 0.3s;
 }
 
 .scrollToTopButton:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 680px) {
+  .home-text p {
+    font-size: 20px;
+  }
+  h1{
+    font-size: 25px;
+  }
 }

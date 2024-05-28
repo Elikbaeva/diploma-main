@@ -3,3 +3,8 @@
   color: #fff;
   margin: 0;
 }
+@media screen and (max-width: 680px) {
+  .gradient-title {
+    font-size: 25px;
+  }
+}

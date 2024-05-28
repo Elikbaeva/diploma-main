@@ -114,7 +114,7 @@ function App() {
         </Layout>
       </AppContext.Provider>
       <button className="scrollToTopButton" onClick={scrollToTop}>
-          Вверх
+          Up
         </button>
     </div>
   );

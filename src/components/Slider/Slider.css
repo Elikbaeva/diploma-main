@@ -20,16 +20,29 @@
   border-radius: 10px;
   overflow: hidden;
   border: 0px solid white;
-  box-shadow: 0 0 0 rgba(0 0 0 / 40%);
+  /* box-shadow: 0 0 0 rgba(0 0 0 / 40%); */
   transition: .3s;
   position: relative;
 }
-
+.slide::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0;
+  z-index: 1;
+}
+.slide.active::before{
+  opacity: 0.5;
+}
 .slide.active {
   flex-grow: 3;
   border-width: 0.5px;
-  box-shadow: 2px 4px 8px rgba(0 0 0 / 50%);
-  opacity: 0.5; /* Устанавливаем затемнение для активного слайда */
+  /* box-shadow: 2px 4px 8px rgba(0 0 0 / 50%); */
+  /* opacity: 0.5;  */
 }
 
 .slide.inactive {
@@ -50,6 +63,7 @@
   white-space: nowrap;
   opacity: 0;
   transition: 0.5s;
+  z-index: 2;
 }
 
 .slide.active .slide__info {
