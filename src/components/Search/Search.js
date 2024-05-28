@@ -1,5 +1,7 @@
 import { useEffect, useContext, useRef } from "react";
 import { AppContext } from "../../App";
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import "./Search.css";
 
 export default function Search() {
@@ -52,14 +54,15 @@ export default function Search() {
           ) : (
             searchResults.map((product) => (
               <div key={product.id} className="SearchResultItem">
-                <img src={product.picture} alt={product.name} />
+                <Zoom>
+                  <img src={product.picture} alt={product.name} className="search-result-image" />
+                </Zoom>
                 <span>{product.name}</span>
               </div>
             ))
           )}
         </div>
       )}
-      
     </div>
   );
 }
