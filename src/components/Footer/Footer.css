@@ -139,3 +139,7 @@ footer .social-media i:hover{
     text-align: center;
   }
 }
+.txt{
+  display: flex;
+  justify-content: space-between;
+}

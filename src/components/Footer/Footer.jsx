@@ -99,11 +99,6 @@ const Footer = () => {
         </div>
       </div>
       <hr></hr>
-      <div className="txt">
-        <div className="footer_text">2021 Twigs Paper. All Rights Reserved.</div>
-        <div className="footer_text">Terms & Conditions</div>
-        <div className="footer_text">Built by The Papestielliz</div>
-      </div>
     </footer>
   );
 };

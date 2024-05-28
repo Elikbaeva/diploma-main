@@ -29,7 +29,6 @@
   }
 
   .Product {
-    border: 1px solid #FAF6FF;
     display: flex;
     flex-direction: column;
     align-items: center;
