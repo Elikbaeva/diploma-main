@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 export default function Auth() {
   const { user } = useContext(AppContext);
 
+  // Логирование состояния пользователя для отладки
+  console.log("Auth component - user:", user);
+
   return (
     <div className="Auth">
       {user ? (

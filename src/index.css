@@ -43,6 +43,7 @@
   
   .Product__price {
     font-size: 18px;
+    margin-bottom: 20px;
     font-weight: bold;
     margin-top: 10px;
   }

@@ -22,15 +22,22 @@ export default function OrderForm() {
 
     const formData = new FormData(event.target);
 
-    addDoc(ordersCollection, {
+    const newOrder = {
       name: formData.get("name"),
       phone: formData.get("phone"),
       user: user.uid,
       address: formData.get("address"),
       cart: cart,
-    }).then((doc) => {
+    };
+
+    console.log("Submitting order:", newOrder);
+
+    addDoc(ordersCollection, newOrder).then((doc) => {
+      console.log("Order submitted successfully:", doc.id);
       setCart({});
       navigate("/thank-you");
+    }).catch(error => {
+      console.error("Error submitting order:", error);
     });
   }
 

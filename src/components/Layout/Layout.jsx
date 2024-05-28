@@ -13,11 +13,16 @@ import Search from "../Search/Search";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const { searchTerm } = useContext(AppContext);
+  const { searchTerm, cart, user } = useContext(AppContext);
 
   function toggleDrawer() {
     setDrawerOpen(!drawerOpen);
   }
+
+  // Логирование состояния контекста для отладки
+  console.log("Layout component - searchTerm:", searchTerm);
+  console.log("Layout component - cart:", cart);
+  console.log("Layout component - user:", user);
 
   return (
     <div className={`Layout ${searchTerm ? "search-active" : ""}`}>

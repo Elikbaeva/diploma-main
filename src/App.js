@@ -22,8 +22,8 @@ export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
-  cart: {}, 
-  setCart: () => {}, 
+  cart: {},
+  setCart: () => {},
   user: null,
   searchTerm: '',
   setSearchTerm: () => {},
@@ -36,13 +36,16 @@ function App() {
   const [products, setProducts] = useState([]);
   const [orders, setOrders] = useState([]);
   const [cart, setCart] = useState(() => {
-    return JSON.parse(localStorage.getItem("cart")) || {};
+    const savedCart = JSON.parse(localStorage.getItem("cart")) || {};
+    console.log("Cart loaded from localStorage:", savedCart);
+    return savedCart;
   });
   const [user, setUser] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
+    console.log("Cart updated:", cart);
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
@@ -57,6 +60,7 @@ function App() {
       }
 
       setUser(user);
+      console.log("User state updated:", user);
     });
   }, []);
 
@@ -65,7 +69,9 @@ function App() {
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
+    console.log("Search results:", results);
   };
+
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -91,7 +97,6 @@ function App() {
     });
   };
 
-
   return (
     <div className="App">
       <AppContext.Provider
@@ -112,9 +117,11 @@ function App() {
           </Routes>
         </Layout>
       </AppContext.Provider>
-      <button className="scrollToTopButton" onClick={scrollToTop}>
+      {showButton && (
+        <button className="scrollToTopButton" onClick={scrollToTop}>
           Up
         </button>
+      )}
     </div>
   );
 }

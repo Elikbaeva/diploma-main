@@ -2,6 +2,9 @@ import { NavLink } from "react-router-dom";
 import "./CartLink.css";
 
 export default function CartLink() {
+  // Логирование для проверки корректной работы компонента
+  console.log("CartLink component rendered");
+
   return (
     <div className="CartLink">
       <NavLink to="/cart">
