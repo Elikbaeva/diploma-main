@@ -1,5 +1,5 @@
 import React from "react";
-import delivery from '../assets/delivery.jpeg'
+import Videos from '../components/Videos/Videos'
 
 const Delivery = () => {
   return (
@@ -35,7 +35,7 @@ const Delivery = () => {
         <li><strong>How can I find out the cost of delivery?</strong> The delivery cost is calculated automatically when placing an order and depends on the chosen delivery method and region.</li>
         <li><strong>Can I change the delivery address?</strong> Yes, you can change the delivery address if the order has not yet been shipped. Please contact our support team to make changes.</li>
       </ul>
-
+    <Videos />
     </div>
   );
 };
