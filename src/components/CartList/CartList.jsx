@@ -4,10 +4,8 @@ import { AppContext } from "../../App";
 import "./CartList.css";
 
 export default function CartList() {
-  // Получение списка товаров и корзины из контекста
   const { products, cart, setCart } = useContext(AppContext);
 
-  // Функция для изменения количества товара в корзине
   function onQuantityChange(product, qty) {
     setCart({
       ...cart,
@@ -15,17 +13,14 @@ export default function CartList() {
     });
   }
 
-  // Функция для удаления товара из корзины
   function onItemRemove(product) {
     const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
   }
 
-  // Получение массива идентификаторов товаров в корзине
   const productIds = Object.keys(cart);
 
-  // Вычисление общей стоимости товаров в корзине
   const totalPrice = productIds.reduce((acc, productId) => {
     const product = products.find((p) => p.id === productId);
     if (product) {
@@ -34,7 +29,6 @@ export default function CartList() {
     return acc;
   }, 0);
 
-  // Генерация JSX для каждого товара в корзине
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
