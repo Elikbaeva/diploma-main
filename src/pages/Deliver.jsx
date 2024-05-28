@@ -21,32 +21,6 @@ const Delivery = () => {
         Experience the convenience of shopping at Nike Shop today and receive
         your items with speed and efficiency.
       </p>
-      <div className="delivery-info">
-        <div className="delivery-option">
-          <i className="fas fa-shipping-fast"></i>
-          <h3 className="delivery-option-heading">Fast Delivery</h3>
-          <p className="delivery-option-text">
-            Get your order delivered quickly and efficiently with our expedited
-            shipping options.
-          </p>
-        </div>
-        <div className="delivery-option">
-          <i className="fas fa-shield-alt"></i>
-          <h3 className="delivery-option-heading">Secure Delivery</h3>
-          <p className="delivery-option-text">
-            Rest assured that your package will be delivered securely and
-            protected throughout the shipping process.
-          </p>
-        </div>
-        <div className="delivery-option">
-          <i className="fas fa-box"></i>
-          <h3 className="delivery-option-heading">Track Your Order</h3>
-          <p className="delivery-option-text">
-            Easily track your order in real-time and stay updated on its
-            delivery status.
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
