@@ -1,23 +1,22 @@
+import React from "react";
 import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Drawer.css";
 
 function Drawer({ open, toggle }) {
-  let menuBtn = document.querySelectorAll(".NavItem a");
-  let menu = document.querySelector(".Drawer");
-  menuBtn.forEach((el) => {
-    el.addEventListener("click", function () {
-      menu.classList.remove("open");
-    });
-  });
+  const handleItemClick = () => {
+    toggle(); // Toggle the drawer state when an item is clicked
+  };
+
   const drawerClassNames = `Drawer ${open ? "open" : ""}`;
 
   return (
     <div className={drawerClassNames}>
       <div onClick={toggle} className="backdrop"></div>
       <div className="content">
+        <button onClick={toggle} className="close-btn">X</button> {/* Close button */}
         <Logo />
-        <Nav />
+        <Nav onItemClick={handleItemClick} />
       </div>
     </div>
   );
