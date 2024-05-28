@@ -56,7 +56,7 @@ const Footer = () => {
               1 Esenina Karakol, Kyrgyzstan
             </a>
             <p>
-              Tell:
+              Phone:
               <br />
               <a
                 className="Tel"
@@ -98,7 +98,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr></hr>
     </footer>
   );
 };

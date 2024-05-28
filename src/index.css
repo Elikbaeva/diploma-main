@@ -454,9 +454,9 @@ ul li strong {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  border: 1px solid #fff;
   background-color: #7690EA;
   color: #fff;
-  border: none;
   border-radius: 5px;
   padding: 20px 20px;
   cursor: pointer;

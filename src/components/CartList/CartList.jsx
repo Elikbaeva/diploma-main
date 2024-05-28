@@ -66,9 +66,9 @@ export default function CartList() {
 
   return (
     <div className="CartList">
-      {/* Вывод списка товаров в корзине */}
+      {}
       {output}
-      {/* Вывод общей стоимости */}
+      {}
       <div className="TotalPrice">Total Price: ${totalPrice.toFixed(2)}</div>
     </div>
   );
