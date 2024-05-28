@@ -3,24 +3,37 @@ import React from "react";
 const Delivery = () => {
   return (
     <div className="delivery-container">
-      <h2 className="delivery-heading">Fast and Reliable Delivery</h2>
-      <p className="delivery-text">
-      At Home Harmony we offer fast and reliable delivery services to ensure
-        you will receive your products as soon as possible.
-      </p>
-      <p className="delivery-text">
-        Whether you're purchasing sneakers, apparel, or accessories, our
-        dedicated delivery team works tirelessly to deliver your order securely
-        to your doorstep.
-      </p>
-      <p className="delivery-text">
-        Enjoy hassle-free shopping with our streamlined delivery process and
-        stay updated with real-time tracking information for your package.
-      </p>
-      <p className="delivery-text">
-        Experience the convenience of shopping at Nike Shop today and receive
-        your items with speed and efficiency.
-      </p>
+      <h1>Delivery Information</h1>
+            
+            <h2>General Delivery Information</h2>
+            <p>We offer several delivery options to meet the needs of our customers. Delivery is available throughout Kyrgyzstan and to CIS countries.</p>
+            
+            <h2>Delivery Times</h2>
+            <ul>
+                <li><strong>Standard Delivery:</strong> 3-7 business days.</li>
+                <li><strong>Express Delivery:</strong> 1-3 business days.</li>
+                <li><strong>International Delivery:</strong> 7-14 business days.</li>
+            </ul>
+
+            <h2>Delivery Costs</h2>
+            <ul>
+                <li><strong>Standard Delivery:</strong> 300 RUB. Free for orders over 3000 RUB.</li>
+                <li><strong>Express Delivery:</strong> 500 RUB.</li>
+                <li><strong>International Delivery:</strong> from 1000 RUB, depending on the region.</li>
+            </ul>
+            
+            <h2>Delivery Partners</h2>
+            <p>We partner with leading delivery services such as UPS, DHL, FedEx, and Kyrgyzstan Post to ensure fast and reliable delivery.</p>
+            
+            <h2>Order Tracking</h2>
+            <p>You can track the status of your order using the tracking number that will be sent to you by email after your order is shipped. <a href="/track-order">Go to order tracking</a>.</p>
+
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <ul>
+                <li><strong>How can I find out the cost of delivery?</strong> The delivery cost is calculated automatically when placing an order and depends on the chosen delivery method and region.</li>
+                <li><strong>Can I change the delivery address?</strong> Yes, you can change the delivery address if the order has not yet been shipped. Please contact our support team to make changes.</li>
+            </ul>
+
     </div>
   );
 };
