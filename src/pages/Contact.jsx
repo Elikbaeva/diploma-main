@@ -73,6 +73,7 @@ const Contact = () => {
              1 Esenina, Karakol, Kyrgyzstan
             </a>
           </span>
+          
         </div>
       </div>
       <ContactForm />
