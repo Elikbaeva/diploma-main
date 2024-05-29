@@ -10,6 +10,7 @@ export default function CategoryList() {
 
   const output = categories.map((category) => {
     if (category.name === 'all') {
+      
       return (
 
         <li className="all" key={category.id}>
