@@ -2,6 +2,7 @@ import React from "react";
 import ContactForm from "../components/ContactForm/ContactForm";
 
 const Contact = () => {
+  
   return (
     <div className="contact-container">
       <h2 className="contact-heading">Contact Us</h2>
