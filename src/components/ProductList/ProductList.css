@@ -63,4 +63,9 @@
     margin: 30px 30px;
   }
 }
-
+@media screen and (max-width: 980px){
+  .Product{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
