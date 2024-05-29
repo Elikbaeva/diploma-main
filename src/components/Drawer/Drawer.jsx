@@ -6,6 +6,8 @@ import "./Drawer.css";
 function Drawer({ open, toggle }) {
   const handleItemClick = () => {
     toggle(); // Toggle the drawer state when an item is clicked
+
+    
   };
 
   const drawerClassNames = `Drawer ${open ? "open" : ""}`;
