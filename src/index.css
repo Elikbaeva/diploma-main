@@ -198,6 +198,11 @@
       margin-bottom: 20px;
     }
   }
+  @media screen and (max-width: 500px){
+    .contact-item:first-child{
+      margin-right: 100px;
+    }
+  }
   .about-us-container {
     /* background-color: white; */
     padding: 20px;

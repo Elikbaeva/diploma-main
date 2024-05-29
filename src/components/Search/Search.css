@@ -59,6 +59,7 @@
 .Search .searcher {
   color: #fff;
   margin: 8px;
+  cursor: pointer;
 }
 
 .Search input::placeholder {
