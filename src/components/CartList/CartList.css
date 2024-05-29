@@ -19,6 +19,7 @@
 .CartItem img {
   border: 2px solid white;
   border-radius: 10px;
+  cursor: pointer;
   width: 200px;
   height: 200px;
   margin-bottom: 1rem;
@@ -38,6 +39,7 @@
   border-radius: 10px;
   border: none;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .CartItem button {
@@ -45,6 +47,7 @@
   color: white;
   border: none;
   padding: 0.5rem 1rem;
+  cursor: pointer;
   border-radius: 10px;
 }
 

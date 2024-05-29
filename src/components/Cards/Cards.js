@@ -7,7 +7,7 @@ import brads from '../../assets/бренды4.png'
 import lara from '../../assets/lara.png'
 import cala from '../../assets/cala.png'
 import berg from '../../assets/centek.png'
-import centek from '../../assets/centek.png'
+import centek from '../../assets/kramet.png'
 
 const Cards = () => {
   return (
