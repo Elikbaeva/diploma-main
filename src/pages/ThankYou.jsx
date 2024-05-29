@@ -1,6 +1,6 @@
 export default function ThankYou() {
   setTimeout(function () {
-    window.location.href = "https://baiyr-emilov-nike.netlify.app/";
+    window.location.href = "https://master--heartfelt-choux-9faeed.netlify.app/";
   }, 5000)
   window.onload = function() {
     window.scrollTo(0, 0);
