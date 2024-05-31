@@ -200,7 +200,7 @@
   }
   @media screen and (max-width: 500px){
     .contact-item:first-child{
-      margin-right: 100px;
+      margin-right: 0px;
     }
   }
   .about-us-container {
